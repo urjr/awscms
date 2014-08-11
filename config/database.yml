@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: awscms_production
-  username: awscms
+  # username: awscms
   password: <%= ENV['AWSCMS_DATABASE_PASSWORD'] %>
