@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require waypoints.min
+//= require fadeSlideShow
 //= require_tree .
