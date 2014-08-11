@@ -2,13 +2,52 @@
 <html>
 <head>
   <title>Once and Future City</title>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+	<div class="main-bar clearfix">
+		<div class="content-left">
+			<p><i>11.016/4.211 | Spring 2014</i></p>
+			<h1>Once and Future City</h1>
+			<p style="margin-bottom:0;"><i>Professor: <a href="http://www.annewhistonspirn.com">Anne Whiston Spirn</a></i></p>
+		</div>
+		<div class="content-right">
+			<p><i>Massachusetts Institute of Technology</i></p>
+			<p><i>School of Architecture and Planning</i></p>
+			<p><i>77 Massachusetts Ave, Cambridge, MA 02139</i></p>
+		</div>
+	</div>
+
+	<div class="main-bar-left">
+			<ul>
+				<li class="title">Class Information</li>
+				<li>Home</li>
+				<li>Overview</li>
+				<li>Syllabus</li>
+				<li class="category-bottom">Assignment Synopsis</li>
+				<li class="title">Assignments</li>
+				<li>Journals</li>
+				<li>Select a Site</li>
+				<li>Natural Processes</li>
+				<li>Change over time</li>
+				<li class="category-bottom">Traces and Trends</li>
+				<li class="title">Student Projects</li>
+				<li class="blank"></li>
+				<li class="title">Resources</li>
+				<li>Helpful Tutorials + Links</li>
+				<li>Site Research</li>
+				<li>Timeline</li>
+				<li class="category-bottom">Comments</li>
+				<li class="title">Your Account</li>
+				<li class="blank"></li>
+			</ul>
+		</div>
+
+	<%= yield %>
 
 </body>
 </html>

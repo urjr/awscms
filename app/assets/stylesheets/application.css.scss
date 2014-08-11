@@ -13,6 +13,24 @@
  *= require_self
  */
 
+html {
+	font-size: 14px;
+	height:100%;
+}
+
+body {
+	height:100%;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+
  @import 'normalize';
  @import 'modules/mainmenu';
  @import 'partials/welcome';

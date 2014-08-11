@@ -1,0 +1,69 @@
+.main-bar{
+	font-family: "Droid Serif", serif;
+	width: 100%;
+	background-color: rgba(255,255,255,0.9);
+	border-bottom: 2px solid #888;
+	height: 120px;
+	}
+	.main-bar h1{
+		margin: 0;
+	}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.content-left{
+	float: left;
+	margin-left: 25px;
+	}
+	.content-left h1{
+		font-family: 'Droid Serif', serif;
+		/*font-style: italic;*/
+		font-size: 2.25em;
+		font-weight: bold;
+	}
+.content-right{
+	float: right;
+	text-align: right;
+	margin-right: 25px;
+}
+
+.main-bar-left {
+	width: 225px;
+	height: 100%;
+	background-color: rgba(255,255,255,0.9);
+	position: absolute;
+	top: 122px;
+	left: 0;
+	overflow-y: scroll;
+	overflow-x: none;
+	font-family: 'Droid Serif', serif;
+	font-size: .9em;
+	box-shadow: 0 5px 20px #000;
+	z-index: 100;
+	}
+	.main-bar-left ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	.main-bar-left ul li {
+		padding-left: 40px;
+		padding-bottom: 15px;
+	}
+	.main-bar-left ul li.title{
+		font-weight: bold;
+		padding-left: 20px !important;
+		margin-top: 15px;
+	}
+	.main-bar-left ul li.category-bottom, .blank {
+		border-bottom: 1px solid white; 
+	}
+	.blank{
+		height: 100px;
+	}
