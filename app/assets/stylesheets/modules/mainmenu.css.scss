@@ -67,3 +67,15 @@
 	.blank{
 		height: 100px;
 	}
+
+	.main-bar-left a, .main-bar a {
+		text-decoration: none;
+		color: #000;
+		transition: .25s;
+		-webkit-transition: .25s;
+	}
+
+	.main-bar-left a:hover, .main-bar a:hover{
+		background-color: #000;
+		color: #fff;
+	}

@@ -16,3 +16,19 @@
 //= require waypoints.min
 //= require fadeSlideShow
 //= require_tree .
+
+
+function loadAll(){
+	mainMenu.init();
+	welcome.init();
+	info.init();
+};
+
+$(document).ready(function(){
+	loadAll();
+
+	$(document).on('page:load', function(){
+		loadAll();
+	});
+});
+
