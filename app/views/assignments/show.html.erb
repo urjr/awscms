@@ -1,29 +1,54 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+      <div class="main-content">
+        <div class='featured-content'>
+          <iframe class="vimeo" src="http://<%= @assignment.vimeo_url %>" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <div class="resources">
+            <ul>
+              <a href="#"><li class="resource">
+                <p><strong>Resource 1</strong></p>
+              </li></a>
+              <a href="#"><li class="resource">
+                <p><strong>Resource 2</strong></p>
+              </li></a>
+              <a href="#"><li class="resource">
+                <p><strong>Resource 3</strong></p>
+              </li></a>
+              <a href="#"><li class="resource">
+                <p><strong>Resource 4</strong></p>
+              </li></a>
+              <a href="#"><li class="resource">
+                <p><strong>Resource 5</strong></p>
+              </li></a>
+              <a href="#"><li class="resource">
+                <p><strong>Resource 6</strong></p>
+              </li></a>
+              <a href="#"><li class="resource">
+                <p><strong>Resource 7</strong></p>
+              </li></a>
+            </ul>
+          </div>
+        </div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @assignment.title %>
-</p>
+        <div class="text-content clearfix">
+          <div class="page-title">
+            <h1><%= @assignment.title %></h1>
+            <h2>Due: <%= @assignment.due_date %> </h2>
+          </div>
+          <div class="page-text">
+            <p> <%= @assignment.content %></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<p>
-  <strong>Alt title:</strong>
-  <%= @assignment.alt_title %>
-</p>
+    <style type="text/css">
+      body{
+        background-image: url(<%= asset_path @assignment.background_url %>) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
 
-<p>
-  <strong>Vimeo url:</strong>
-  <%= @assignment.vimeo_url %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @assignment.content %>
-</p>
-
-<p>
-  <strong>Due date:</strong>
-  <%= @assignment.due_date %>
-</p>
-
-<%= link_to 'Edit', edit_assignment_path(@assignment) %> |
-<%= link_to 'Back', assignments_path %>
+<!-- link_to 'Edit', edit_assignment_path(@assignment) -->
+<!-- link_to 'Back', assignments_path -->

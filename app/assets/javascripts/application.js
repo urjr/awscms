@@ -22,6 +22,7 @@ function loadAll(){
 	mainMenu.init();
 	welcome.init();
 	info.init();
+	assignment.init();
 };
 
 $(document).ready(function(){
