@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :infos
+
   resources :assignments
 
   root 'welcome#index'
