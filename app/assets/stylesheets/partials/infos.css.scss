@@ -1,0 +1,81 @@
+// Place all the styles related to the infos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+	min-width: 1000px;
+	margin-left: 225px;
+	}
+	.main-content{
+		width: 1000px;
+		margin: auto;
+		box-shadow: 0 5px 20px #000;
+		/*-webkit-transform: scale(0.75,0.75);*/
+		}
+		.vimeo, .resources{
+			float: left;
+		}
+		.resources{
+			width: 300px;
+			overflow-y: scroll;
+			overflow-x: none;
+			background-color: rgba(0,0,0,0.75);
+			height: 393px;
+		}
+		.resources ul{
+			width: 100%;
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+		.resources ul li{
+			/*width: 100%;*/
+			border-bottom: 1px solid #333;
+			padding-left: 20px;
+			color: white;
+			padding: 20px 15px;
+			}
+
+			.resources a {
+				text-decoration: none;
+			}
+			.resources ul li p {
+				margin:0;
+			}
+			.resource:hover{
+				background-color: rgba(255,255,255,0.75);
+				color: #000;
+				-webkit-transition: .1s;
+			}
+
+	.text-content {
+		width: 1000px;
+		background-color: rgba(255,255,255,0.9);
+		}
+		.page-title{
+			width: 30%;
+			text-align: right;
+			float: left;
+			}
+			.page-title h2{
+				font-family: 'Droid Serif', serif;
+				margin-right: 30px;
+				margin-bottom: 0;
+			}
+			.page-title h1 {
+				font-family: 'Droid Serif', serif;
+				font-size: 3em;
+				margin-right: 30px;
+				margin-top: 10px;
+			}
+		.page-text{
+			width: 70%;
+			float: right;
+			}
+			.page-text p {
+				font-family: 'Droid Serif', serif;
+				font-weight: 400;
+				line-height: 1.5;
+				font-size: 1.25em;
+				padding-right: 20px;
+			}

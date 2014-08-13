@@ -18,32 +18,35 @@
 		<div class="content-right">
 			<p><i>Massachusetts Institute of Technology</i></p>
 			<p><i>School of Architecture and Planning</i></p>
-			<p><i>77 Massachusetts Ave, Cambridge, MA 02139</i></p>
+			
 		</div>
 	</div>
 
 	<div class="main-bar-left">
 			<ul>
 				<li class="title">Class Information</li>
-				<li>Home</li>
-				<li>Overview</li>
-				<li>Syllabus</li>
-				<li class="category-bottom">Assignment Synopsis</li>
+				<li><%= link_to 'Home', root_path %></li>
+				<% Info.all.each do |info| %>
+				<li><%= link_to info.title, info_path(info) %></li>
+				<% end %>
+
 				<li class="title">Assignments</li>
-				<li>Journals</li>
-				<li>Select a Site</li>
-				<li>Natural Processes</li>
-				<li>Change over time</li>
-				<li class="category-bottom">Traces and Trends</li>
+
+				<% Assignment.all.each do |assignment| %>
+				<li><%= link_to assignment.alt_title, assignment_path(assignment) %></li>
+				<% end %>
+
 				<li class="title">Student Projects</li>
-				<li class="blank"></li>
+
+				<li><a href="#">Current Projects (2015)</a></li>
+				<li><a href="#">Featured Projects</a></li>
+
 				<li class="title">Resources</li>
-				<li>Helpful Tutorials + Links</li>
-				<li>Site Research</li>
-				<li>Timeline</li>
-				<li class="category-bottom">Comments</li>
-				<li class="title">Your Account</li>
-				<li class="blank"></li>
+
+				<li><a href="#">Helpful Tutorials + Links</a></li>
+				<li><a href="#">Site Research</a></li>
+				<li><a href="#">Timeline</a></li>
+				<li><a href="#">Comments</a></li>
 			</ul>
 		</div>
 
