@@ -1,20 +1,39 @@
 <div id="slideshow" style="margin:0;width:100%;height:100%;">
-	        <div style="width:100%;height:100%;background-image:url('img/testbg.jpg');background-size:cover;">
-	        	<div style="margin-left:225px;">
-		        	<h1 class="try">Name of Project</h1>
-		        	<a href="#"><h2>Link to Project</h2></a>
-	        	</div>
-	        </div>
-	        <div style="width:100%;height:100%;background-image:url('img/bgdemo.jpg');background-size:cover;">
-	        	<div style="margin-left:225px;">
-		        	<h1 class="try">Name of other Project</h1>
-		        	<a href="#"><h2>Link to Project</h2></a>
-	        	</div>
-	        </div>
-			<div style="width:100%;height:100%;background-image:url('img/testbg.jpg');background-size:cover;">
-	        	<div style="margin-left:225px;padding-left:50px;padding-right:50px;">
-		        	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	        	</div>
-	        </div>
+
+	<div style="background-image:url(<%= asset_path 'branches.jpg' %>);">
+    	<div class="slideshow-text">
+        	<h1 class="try">Natural Processes</h1>
+        	<a><h2>Image Source</h2></a>
+        	<a href="#"><h2>Link to Project</h2></a>
     	</div>
-    <br clear="all" />
+    </div>
+
+    <div style="background-image:url(<%= asset_path 'rondo.jpg' %>);">
+    	<div class="slideshow-text">
+        	<h1 class="try">Traces and Trends</h1>
+        	<a><h2>Image Source</h2></a>
+        	<a href="#"><h2>Link to Project</h2></a>
+    	</div>
+    </div>
+
+    <div style="background-image:url(<%= asset_path 'oldmap.jpg' %>);">
+    	<div class="slideshow-text">
+        	<h1 class="try">Change over Time</h1>
+        	<a><h2>Image Source</h2></a>
+        	<a href="#"><h2>Link to Project</h2></a>
+    	</div>
+    </div>
+
+	<div style="background-image:url(<%= asset_path 'boston.jpg' %>);">
+    	<div class="slideshow-text">
+        	<p>What is a city?</p>
+        	<p>What shapes it?</p>
+        	<p>How does its history influence future development?</p>
+    	</div>
+    </div>
+
+    <div style="background-image:url(<%= asset_path 'boston.jpg' %>);">
+    </div>
+
+</div>
+<br clear="all" />

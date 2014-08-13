@@ -43,8 +43,10 @@
 
     <style type="text/css">
       body{
-        background-image: url(<%= asset_path 'econ.jpg' %>) !important;
-        background-repeat: repeat;
+        background-image: url(<%= asset_path @assignment.background_url %>) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
       }
     </style>
 

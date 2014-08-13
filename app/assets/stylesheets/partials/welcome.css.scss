@@ -8,7 +8,13 @@
 
 			#slideshow div{
 				text-align: center;
-			}
+				background-size: cover;
+				top:0;
+				}
+				div.slideshow-text {
+					margin-left: 225px;
+					padding: 0 40px 0 40px;
+				}
 
 			#slideshow h1{
 				color: white;
@@ -16,8 +22,7 @@
 				font-size: 5em;
 				font-family: 'Droid Serif';
 				font-weight: 700;
-				margin-top: 200px;
-				margin-bottom: 0px;
+				margin:0px;
 			}
 
 			#slideshow a {
