@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'timeline/index'
+
+  get 'research/index'
+
   get 'tutorials/index'
 
   resources :infos
