@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'tutorials/index'
+
   resources :infos
 
   resources :assignments
