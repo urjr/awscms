@@ -35,21 +35,4 @@ ActiveRecord::Schema.define(version: 20140813173137) do
     t.datetime "updated_at"
   end
 
-  create_table "resources", force: true do |t|
-    t.string   "title"
-    t.string   "url"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "things", force: true do |t|
-    t.string   "title"
-    t.string   "url"
-    t.integer  "assignment_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "things", ["assignment_id"], name: "index_things_on_assignment_id", using: :btree
-
 end
