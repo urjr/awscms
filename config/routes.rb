@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'current_projects/index'
+
   get 'timeline/index'
 
   get 'research/index'
