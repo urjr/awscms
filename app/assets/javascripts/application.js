@@ -21,7 +21,7 @@
 function loadAll(){
 	mainMenu.init();
 	welcome.init();
-	info.init();
+	// info.init();
 	assignment.init();
 };
 

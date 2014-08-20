@@ -35,7 +35,7 @@
             <h2>Due: <%= @assignment.due_date %> </h2>
           </div>
           <div class="page-text">
-            <p> <%= @assignment.content %></p>
+            <%= @assignment.content.html_safe %>
           </div>
         </div>
       </div>

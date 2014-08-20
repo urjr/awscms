@@ -1,0 +1,50 @@
+@media screen and (max-width: 1240px) {
+	.main-bar-left{
+		left: -225px;
+		position: fixed;
+		top:62px;
+	}
+
+	.main-bar {
+		height: 60px;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index:80;
+	}
+
+	.content-left{
+		width: 100%;
+		text-align: center;
+		margin-top: 0;
+	}
+
+	.content-left p {
+		display: none;
+	}
+
+	.content-left h1 {
+		margin-top: 10px;
+	}
+
+	.content-right{
+		display: none;
+	}
+
+	.container{
+		margin: auto;
+	}
+
+	.main-content {
+		margin-top: 60px;
+	}
+
+	.show-menu{
+		display: block;
+	}
+
+	#slideshow{
+		z-index: 1;
+	}
+
+}

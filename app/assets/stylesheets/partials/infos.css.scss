@@ -39,6 +39,7 @@
 			.resources a {
 				text-decoration: none;
 			}
+
 			.resources ul li p {
 				margin:0;
 			}
@@ -51,6 +52,9 @@
 	.text-content {
 		width: 1000px;
 		background-color: rgba(255,255,255,0.9);
+		}
+		.text-content a{
+			color: green;
 		}
 		.page-title{
 			width: 30%;

@@ -26,7 +26,15 @@
 		/*font-style: italic;*/
 		font-size: 2.25em;
 		font-weight: bold;
+		margin-top: -10px;
 	}
+	.show-menu {
+		position: absolute;
+		left: 20px;
+		top: 20px;
+		display: none;
+	}
+
 .content-right{
 	float: right;
 	text-align: right;
@@ -47,6 +55,8 @@
 	font-size: .9em;
 	box-shadow: 0 5px 20px #000;
 	z-index: 100;
+	transition: .25s;
+	-webkit-transition: .25s;
 	}
 	.main-bar-left ul{
 		list-style-type: none;
@@ -74,6 +84,11 @@
 		color: #000;
 		transition: .25s;
 		-webkit-transition: .25s;
+		color: green;
+	}
+
+	.main-bar a {
+		color: green;
 	}
 
 	.main-bar-left a:hover, .main-bar a:hover{
