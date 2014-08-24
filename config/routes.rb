@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'syllabus/index'
+
   get 'featured/index'
 
   get 'current_projects/index'
