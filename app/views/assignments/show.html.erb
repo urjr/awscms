@@ -4,10 +4,13 @@
           <iframe class="vimeo" src="http://<%= @assignment.vimeo_url %>" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           <div class="resources">
             <ul>
-              <a href="#"><li class="resource">
-                <p><strong>Resource 1</strong></p>
+            <% @assignment.resources.each do |resource| %>
+              <a href="<%= resource.link %>"><li class="resource">
+                <p><strong><%= resource.name %></strong></p>
               </li></a>
-              <a href="#"><li class="resource">
+            <% end %>
+              
+              <!-- <a href="#"><li class="resource">
                 <p><strong>Resource 2</strong></p>
               </li></a>
               <a href="#"><li class="resource">
@@ -24,7 +27,7 @@
               </li></a>
               <a href="#"><li class="resource">
                 <p><strong>Resource 7</strong></p>
-              </li></a>
+              </li></a> -->
             </ul>
           </div>
         </div>
