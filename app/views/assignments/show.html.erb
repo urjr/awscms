@@ -4,7 +4,7 @@
           <iframe class="vimeo" src="https://<%= @assignment.vimeo_url %>" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           <div class="resources">
             <ul>
-            <% @assignment.resources.each do |resource| %>
+            <% @assignment.resources.order('id ASC').all.each do |resource| %>
               <a href="<%= resource.link %>"><li class="resource">
                 <p><strong><%= resource.name %></strong></p>
               </li></a>
