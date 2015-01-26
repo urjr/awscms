@@ -1,6 +1,6 @@
 var assignment = {
 	hideIfNoLink: function(){
-		$('[src="http://"]').hide();
+		$('[src="https://"]').hide();
 		if ($('iframe').is(":hidden")) {
 
 			$('.vimeo, .resources').css({
