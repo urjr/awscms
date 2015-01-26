@@ -13,7 +13,7 @@
   </thead>
 
   <tbody style="margin-left:300px;">
-    <% @assignments.each do |assignment| %>
+    <% @assignments.order('id ASC').all.each do |assignment| %>
       <tr>
         <td><%= assignment.title %></td>
         <td><%= assignment.alt_title %></td>

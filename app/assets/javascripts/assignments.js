@@ -3,7 +3,7 @@ var assignment = {
 		$('[src="https://"]').hide();
 		if ($('iframe').is(":hidden")) {
 
-			$('.vimeo, .resources').css({
+			$('.resources').css({
 				'width':'100%',
 				'height': '275px',
 			});
