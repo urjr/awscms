@@ -1,0 +1,12 @@
+
+<div style="margin:300px 0 300px">
+	<%= form_for [@assignment, @resource] do |form| %>
+		<%= form.label :name %>
+		<%= form.text_field :name %>
+
+		<%= form.label :link %>
+		<%= form.text_field :link %>
+
+		<%= form.submit "save" %>
+	<% end %>
+</div>

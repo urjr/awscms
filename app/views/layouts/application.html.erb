@@ -8,7 +8,6 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
 	<div class="main-bar clearfix">
 		<div class="content-left">
 			<a class="show-menu" href="">Show Menu</a>
@@ -22,6 +21,14 @@
 			<p><a href="http://architecture.mit.edu">MIT Architecture</a> | <a href="http://dusp.mit.edu/">Department of Urban Studies and Planning</a></p>
 			
 		</div>
+	
+	<% flash.each do |type, message| %>
+		<div class="alert flash <%= type %>">
+			<%= message %>
+		</div>
+	<% end %>
+	
+		
 	</div>
 
 	<div class="main-bar-left">

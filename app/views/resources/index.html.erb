@@ -1,0 +1,17 @@
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1><%= @assignment.title %> Resources</h1>
+<p>Find me in app/views/resources/index.html.erb</p>
+
+<ul class="resource_list">
+	<% @assignment.resources.each do |resource| %>
+	<li><%= resource.name %>  <%= resource.link%> <%= link_to "Edit", edit_assignment_resource_path(resource) %> <%= link_to "Delete", assignment_resource_path(resource), method: :delete, data: {confirm: "Are you sure you want to delete the resource?"}%></li>
+	<% end %>
+</ul>
+
+<p>
+	<%= link_to "new resource", new_assignment_resource_path %>
+</p>

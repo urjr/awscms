@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'resources/index'
+
   get 'syllabus/index'
 
   get 'featured/index'
@@ -14,7 +16,9 @@ Rails.application.routes.draw do
 
   resources :infos
 
-  resources :assignments
+  resources :assignments do
+    resources :resources
+  end
 
   root 'welcome#index'
 
